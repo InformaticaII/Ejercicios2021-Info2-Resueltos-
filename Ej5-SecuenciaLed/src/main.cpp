@@ -1,4 +1,4 @@
-/* //Programa simple que cumple con lo pedido
+/*//Programa simple que cumple con lo pedido
 #include <Arduino.h>
 
 void setup()
@@ -14,11 +14,11 @@ int sentido = 0;
 
 void loop()
 {
-  if (digitalRead(pulsador[0]) == LOW)
+  if (digitalRead(5) == LOW)
   {
     sentido = 0;
   }
-  else if (digitalRead(pulsador[1]) == LOW)
+  else if (digitalRead(6) == LOW)
   {
     sentido = 1;
   }
@@ -101,7 +101,7 @@ void loop()
     digitalWrite(led[estado], LOW); //Apaga el led actualmente encendido
     estado--;                     //Cambia de estado
     if ( estado < 0 ){            //Si llegó al primer led...
-      estado = N_LED;             //...vuelve al último
+      estado = (N_LED-1);             //...vuelve al último
     }
     digitalWrite(led[estado], HIGH); //Enciende el led correspondiente
   }
