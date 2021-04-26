@@ -89,9 +89,11 @@ void setup()
 void loop()
   {
   digitalWrite(PIN,1);
-  delay(1); //probar con 120  10  1 12 23
+  delay(23); //probar con 120  10  1 12 23
   digitalWrite(PIN,0);
-  delay(23); //probar con 120  230  23 12 1 
+  delay(1); //probar con 120  230  23 12 1 
+
+  ///
   }
   */
 
@@ -100,12 +102,12 @@ void loop()
 /*
 //PWM simple
 #define SENSOR  0   //pin de entrada para el sensor
-#define LED     13  //pin de salida para el led
+#define LED     5  //pin de salida para el led
 
 void setup()                                           
 {  
   pinMode(LED,OUTPUT);
-  analogWrite(LED,127);   //Configura el PWM con un duty del 50%
+  analogWrite(LED,25);   //Configura el PWM con un duty del 50%
 }
 
 void loop()
@@ -136,4 +138,3 @@ void loop()
   analogWrite(LED,conversion);   //Configura el PWM con el valor de la lectura
   delay(T_MUESTREO);
 }
-   
