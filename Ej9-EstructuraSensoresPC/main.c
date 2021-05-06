@@ -15,16 +15,16 @@ Para caracteres especiales
 
 struct sensores
 {
-    char nombre;
-    int valor;
-    long tiempo;
+    char nombre;    // 1 byte
+    int valor;      // 4 byte
+    long tiempo;    // 4 byte
 }ldr;
 
 struct sensoresb
 {
-    char nombre;
-    uint16_t valor;
-    uint32_t tiempo;
+    uint32_t tiempo;    //4
+    uint16_t valor;     //2
+    char nombre;        //1
 }temperatura;
 
 int main()

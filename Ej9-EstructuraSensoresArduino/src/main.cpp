@@ -3,17 +3,17 @@
 //creamos la estructura sensores y declaramos la variable ldr
 struct sensores
 {
-    char nombre;
-    int valor;
-    long tiempo;
+    char nombre;  // 1 byte
+    int valor;    // 2
+    long tiempo;  // 4
 }ldr;
 
 //creamos la estructura sensoresb con tipos de datos standar y declaramos la variable temperatura
 struct sensoresb
 {
-    char nombre;
-    uint16_t valor;
-    uint32_t tiempo;
+    uint32_t tiempo;  //4
+    uint16_t valor;   //2
+    char nombre;      //1 byte 
 }temperatura;
 
 //Configuraciones

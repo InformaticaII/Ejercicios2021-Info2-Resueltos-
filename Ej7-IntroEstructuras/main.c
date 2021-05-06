@@ -25,6 +25,7 @@ int main ()
     printf("b-Ingrese su apellido \n");
     scanf("%s",ptrCliente->apellido);
     printf("Su apellido es: %s\n",ptrCliente->apellido);
+    printf("Su apellido es: %s\n",registroCliente.apellido);
     //c
     printf("c-Ingrese su nombre \n");
     scanf("%s",registroCliente.nombre);
