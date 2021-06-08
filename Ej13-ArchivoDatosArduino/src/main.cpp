@@ -64,7 +64,7 @@ void loop()
     Serial.println("error abriendo el archivo");
   }
 
-  //Modo lento
+  //Modo rápido
   archivo = SD.open("archivo.dat", FILE_WRITE);
   if (archivo)
   {
