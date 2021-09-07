@@ -6,6 +6,7 @@ class Complejo{
 	public: 
 		Complejo();								//Constructor
 		Complejo (double real, double imaginario);
+		//Complejo (double real = 5, double imaginario = 6); //Otra opcion para iniciar por defecto el constructor
 		Complejo sumaComplejo(Complejo a);
 		Complejo restaComplejo(Complejo a);
 		void establecerComplejo(double real, double imaginario);

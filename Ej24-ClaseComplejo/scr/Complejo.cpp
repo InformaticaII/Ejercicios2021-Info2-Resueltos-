@@ -6,8 +6,8 @@ using std::endl;
 
 Complejo::Complejo ()
 {
-	p = 0;
-	q = 0;
+	p = 5;
+	q = 6;
 }
 
 Complejo::Complejo (double real, double imaginario)
